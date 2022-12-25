@@ -1,6 +1,10 @@
 const express = require('express');
 const authRoute = require('./auth.route');
 const userRoute = require('./user.route');
+const theaterRoute = require('./theater.route');
+const movieRoute = require('./movie.route');
+const showRoute = require('./show.route');
+const ticketRoute = require('./ticket.route');
 const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 
@@ -14,6 +18,22 @@ const defaultRoutes = [
   {
     path: '/users',
     route: userRoute,
+  },
+  {
+    path: '/theaters',
+    route: theaterRoute,
+  },
+  {
+    path: '/movies',
+    route: movieRoute,
+  },
+  {
+    path: '/shows',
+    route: showRoute,
+  },
+  {
+    path: '/tickets',
+    route: ticketRoute,
   },
 ];
 
